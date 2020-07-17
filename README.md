@@ -7,7 +7,7 @@
    * Click on expend `Visibility, project features, permissions` 
    * Change project visibility from public to private
 ## After pushing your codes
- * Add it@dataimpact.fr as **reporter** in `settings, members`
+ * Add it@dataimpact.fr as **reporter** in `members`
  * Answer the email with your project link in it 
  
 # Test
