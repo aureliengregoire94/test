@@ -87,7 +87,7 @@ Input: arr = [-2, -6, -3, -8, 4, 1] --> Output: -2 -6 -3 -8 1 4
 
 ### Exercise 1 (5 min)
 
-Make the test `test_my_set` work
+Make the test `test_my_set` work by implementing the class `MySet` (you don't have to change anything on the test part for this exercise)
 
 ### Exercise 2 (10 min)
 
