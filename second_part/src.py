@@ -1,9 +1,7 @@
 
 
-class MySet(set):
-    # todo exercise 1
-    ...
-
+def random_gen():
+    pass
 
 def decorator_check_max_int(func):
     # todo exercise 2

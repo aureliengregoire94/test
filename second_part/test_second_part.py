@@ -2,14 +2,17 @@ from sys import maxsize
 
 import pytest
 
-from second_part.src import MySet, div, raise_something, add, ForceToList
+from second_part.src import div, raise_something, add, ForceToList, random_gen
 
 
 def test_my_set():
-    a = MySet([1, 2, 3])
-    b = MySet([1, 5, 100])
-    assert a + b == {1, 2, 3, 5, 100}
-    assert a - b == {2, 3}
+    g = random_gen()
+    a = next(g)
+    while a != 15:
+        assert 10 <= a <= 20
+        a = next(g)
+    with pytest.raises(StopIteration):
+        next(g)
 
 
 def test_max_int():
