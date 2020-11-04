@@ -21,6 +21,9 @@ Some really important tips:
 ## First Part (python algorithm)
 
 ### Exercise 1
+(I repeat myself I will not correct your test if you don't change visibility of the project from public to private, so please start with this)
+
+
 In the function exercise_one on first_part.src module:
 print every number between 1 and 100 as follows:
  * For every multiple of 3 print "Three".
@@ -49,15 +52,16 @@ ThreeFive
 ```
 
 ### Exercise 2 (15 min)
-Find the Missing Number
+Determine whether a positive integer number is colorful or not.
 
-You are given a list of n-1 integers and these integers are in the range of 1 to n. There are no duplicates in the list. One of the integers is missing in the list. Write an efficient code to find the missing integer.
+263 is a colorful number because [2, 6, 3, 2x6, 6x3, 2x6x3] are all different; whereas 236 is not colorful, because [2, 3, 6, 2x3, 3x6, 2x3x6] have 6 twice.
 
+So take all consecutive subsets of digits, take their product and ensure all the products are different.
 Examples:
 ```
-Input: arr = [8, 2, 3, 6, 4, 7, 1] --> Output: 5
-
-Input: arr = [2, 1, 3, 5] --> Output: 4
+263  -->  true
+236  -->  false
+2532 -->  false
 ```
 
 ### Exercise 3 (10 min)
@@ -72,15 +76,16 @@ calculate('54') ➞ False
 ```
 
 ### Exercise 4 (25 min)
-Sort an array without changing position of negative numbers
+Write a function that will find all the anagrams of a word from a list. You will be given two inputs a word and an array with words. You should return an array of all the anagrams or an empty array if there are none.
 
-Given an array arr[] of N integers, the task is to sort the array without changing the position of negative numbers (if any) i.e. the negative numbers need not be sorted.
 Examples:
 
 ```
-Input: arr = [2, -6, -3, 8, 4, 1] --> Output: 1 -6 -3 2 4 8
+anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']) => ['aabb', 'bbaa']
 
-Input: arr = [-2, -6, -3, -8, 4, 1] --> Output: -2 -6 -3 -8 1 4
+anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']) => ['carer', 'racer']
+
+anagrams('laser', ['lazing', 'lazy',  'lacer']) => []
 ```
 
 ## Second Part (python advanced)
