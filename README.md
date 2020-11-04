@@ -91,7 +91,7 @@ Create a generator named random_gen that generates random numbers (use random mo
 
 ### Exercise 2 (10 min)
 
-Rewrite decorator_check_max_int to force the function "add" not to return values greater than maxsize
+Rewrite decorator_to_str to force the functions "add" and "get_info" to return string values 
 
 ### Exercise 3 (10 min)
 

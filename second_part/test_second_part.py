@@ -1,8 +1,6 @@
-from sys import maxsize
-
 import pytest
 
-from second_part.src import div, raise_something, add, ForceToList, random_gen
+from second_part.src import div, raise_something, add, ForceToList, random_gen, get_info
 
 
 def test_my_set():
@@ -16,8 +14,8 @@ def test_my_set():
 
 
 def test_max_int():
-    assert add(5, 30) == 35
-    assert add(maxsize, 1) == maxsize
+    assert add(5, 30) == '35'
+    assert get_info({'info': [1, 2, 3]}) == '[1, 2, 3]'
 
 
 def test_ignore_exception():

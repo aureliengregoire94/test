@@ -1,16 +1,21 @@
 
-
 def random_gen():
     pass
 
-def decorator_check_max_int(func):
+
+def decorator_to_str(func):
     # todo exercise 2
     return func
 
 
-@decorator_check_max_int
+@decorator_to_str
 def add(a, b):
     return a + b
+
+
+@decorator_to_str
+def get_info(d):
+    return d['info']
 
 
 def ignore_exception(exception):
@@ -43,7 +48,7 @@ class CacheDecorator:
         return _wrap
 
 
-class MetaInherList:
+class MetaInherList(type):
     # todo exercise 5
     pass
 
