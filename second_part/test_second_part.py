@@ -5,6 +5,7 @@ from second_part.src import div, raise_something, add, ForceToList, random_gen, 
 
 def test_generator():
     g = random_gen()
+    assert isinstance(g, type((x for x in [])))
     a = next(g)
     while a != 15:
         assert 10 <= a <= 20
@@ -13,7 +14,7 @@ def test_generator():
         next(g)
 
 
-def test_max_int():
+def test_to_str():
     assert add(5, 30) == '35'
     assert get_info({'info': [1, 2, 3]}) == '[1, 2, 3]'
 
