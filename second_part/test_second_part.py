@@ -3,7 +3,7 @@ import pytest
 from second_part.src import div, raise_something, add, ForceToList, random_gen, get_info
 
 
-def test_my_set():
+def test_generator():
     g = random_gen()
     a = next(g)
     while a != 15:
