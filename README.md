@@ -1,6 +1,6 @@
 # Test scraping python
 ## Before starting
- * Fork the project in your namespace
+ * Fork the project in your Gitlab namespace
  * **Caution! very important:** Change project visibility: 
    * Click on `Settings` bottom left, when you see your project 
    * Select `General`
