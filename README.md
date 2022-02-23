@@ -12,9 +12,10 @@
  
 # Test
 Some really important tips:
- * Comments and automated tests are a big plus
+ * Comments and code quality are a big plus
+ * You need to implement unit tests whenever it is possible
  * You might need pytest (and you can use any other package)
- * There are three parts (algorithm, advanced, scraping) you can choose to skip one.
+ * There are three parts (algorithm, advanced, scraping)
  * You can use internet
  
 
