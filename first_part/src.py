@@ -44,3 +44,22 @@ def exercise_two(num):
     else: 
         return True
 
+
+def calculate(list): 
+    check = 0
+    sum = 0
+    for i in list: 
+        if type(i) == int: 
+            check = 1
+            sum += i
+    if check == 0: 
+        return False
+    else: 
+        return sum
+
+def anagrams(list, word): 
+    result = []
+    for i in list: 
+        if sorted(i) == sorted(word):
+            result.append(i)
+    return result
