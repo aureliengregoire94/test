@@ -1,6 +1,6 @@
 import pytest
 
-from second_part.src import div, raise_something, add, ForceToList, random_gen, get_info
+from src import div, raise_something, add, ForceToList, random_gen, get_info
 
 
 def test_generator():

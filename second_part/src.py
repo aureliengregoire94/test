@@ -1,6 +1,14 @@
+from email.headerregistry import HeaderRegistry
+from hashlib import new
+from random import randint
+from re import X
+
 
 def random_gen():
-    pass
+    x = 0
+    while x != 15:
+        x = randint(10, 20)
+
 
 
 def decorator_to_str(func):
@@ -10,12 +18,12 @@ def decorator_to_str(func):
 
 @decorator_to_str
 def add(a, b):
-    return a + b
+    return str(a + b)
 
 
 @decorator_to_str
 def get_info(d):
-    return d['info']
+    return str(d['info'])
 
 
 def ignore_exception(exception):
@@ -30,9 +38,11 @@ def div(a, b):
 
 @ignore_exception(TypeError)
 def raise_something(exception):
-    raise exception
+    return None
 
 
+def hellowolrd(z): 
+    return 'hellowolrd' + z
 # exercise 4
 class CacheDecorator:
     """Saves the results of a function according to its parameters"""
@@ -46,6 +56,20 @@ class CacheDecorator:
             return self.cache[a[0]]
 
         return _wrap
+
+
+def test_init():
+    newobj = CacheDecorator()
+    assert newobj.cache == {}, "the object isn't instantiated"
+    return newobj
+
+def test_call(): 
+    objet = test_init()
+    objet.__call__(hellowolrd(" aurelien"))
+    assert objet.cache != {}, "the cache wasn't filled"
+
+test_call()
+
 
 
 class MetaInherList(type):
